@@ -1,0 +1,10 @@
+.layout {
+  background-color: #eee;
+  font-family: sans-serif;
+  padding-top: 64px;
+  padding-bottom: 32px;
+  /* height: calc(100vh - 96px); */
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}

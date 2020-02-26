@@ -1,0 +1,10 @@
+.carousel-item {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.carousel-item-image {
+  height: 124px;
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,25 @@
+.recently-played-list {
+  overflow-x: scroll;
+}
+
+.recently-played-list::-webkit-scrollbar {
+  appearance: none;
+  -webkit-appearance: none;
+  display: none;
+}
+
+.recently-played-item {
+  border-radius: 8px;
+  width: 40vw;
+  height: 20vw;
+}
+
+.recently-played-image {
+  border-radius: 8px;
+  width: 40vw;
+  height: 20vw;
+}
+
+.recently-played-list .recently-played-item:not(:last-child) {
+  margin-right: 8px;
+}

@@ -1,0 +1,52 @@
+.App {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0px;
+  height: 100vh;
+  background-color: #eeeeee;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.recently-played-headline {
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.search-game-items-container {
+  position: absolute;
+  top: 48px;
+  padding-top: 16px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #c6161d;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.layout-body {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.all-games-container {
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: 32px;
+}
+
+.all-games-headline {
+  margin-bottom: 24px;
+  margin-left: 8px;
+}
+
+.button-container {
+  height: 80px;
+}

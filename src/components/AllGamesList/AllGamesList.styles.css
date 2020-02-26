@@ -1,0 +1,29 @@
+.all-games-list {
+  flex-wrap: wrap;
+}
+
+.all-games-item {
+  width: calc(33.33% - 16px);
+  margin-bottom: 16px;
+  border-radius: 16px;
+  margin-right: 8px;
+  margin-left: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 3px 4px #bbb;
+}
+
+.all-games-item-body {
+  padding: 8px;
+}
+
+.all-games-item-image-container {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.all-games-item-image {
+  height: calc(33.33vw - 30px);
+  width: calc(33.33vw - 30px);
+  object-fit: none;
+}
