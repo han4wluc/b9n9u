@@ -7,9 +7,8 @@
   background-color: #9f1317;
   padding-left: 8px;
   padding-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
   border-radius: 8px;
+  min-height: 48px;
 }
 
 .search-game-item-image {
@@ -23,6 +22,6 @@
   color: white;
 }
 
-.search-game-list .search-game-item:not(:last-child) {
+.search-game-list .search-game-item {
   margin-bottom: 8px;
 }

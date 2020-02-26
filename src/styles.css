@@ -18,9 +18,11 @@ body {
 }
 
 .search-game-items-container {
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
   top: 48px;
   padding-top: 16px;
+  padding-bottom: 16px;
   bottom: 0px;
   left: 0px;
   right: 0px;

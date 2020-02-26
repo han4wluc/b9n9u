@@ -31,17 +31,20 @@ function useAppState() {
 
   const updateSearchKeyword = useCallback(
     keyword => {
+      if (keyword === "") {
+        document.body.classList.remove("no-scroll");
+      } else {
+        document.body.classList.add("no-scroll");
+      }
       setSearchKeyword(keyword);
     },
     [setSearchKeyword]
   );
 
-  const resetKeyword = useCallback(
-    keyword => {
-      setSearchKeyword("");
-    },
-    [setSearchKeyword]
-  );
+  const resetKeyword = useCallback(() => {
+    document.body.classList.remove("no-scroll");
+    setSearchKeyword("");
+  }, [setSearchKeyword]);
 
   const isSearchMode = useMemo(() => {
     return searchKeyword !== "";
@@ -89,10 +92,10 @@ function useAppState() {
   }, [allGames, data]);
 
   const searchResultGames = useMemo(() => {
-    return allGames.filter(game => {
+    return data.filter(game => {
       return game.title.toLowerCase().startsWith(searchKeyword.toLowerCase());
     });
-  }, [allGames, searchKeyword]);
+  }, [data, searchKeyword]);
 
   return {
     currentGame,
